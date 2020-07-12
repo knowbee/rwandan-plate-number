@@ -1,13 +1,13 @@
 const {
-  isValid
+  isSpecial
 } = require("../src");
 const chai = require("chai");
 const expect = chai.expect;
 
-describe("rwandan special plate number validator", async () => {
+describe("rwandan special plate number", async () => {
   describe("special plate number", () => {
     it("should return true with GP012K", function () {
-      expect(isValid("GP012K")).to.equal(true);
+      expect(isSpecial("GP012K")).to.equal(true);
     });
   });
 });

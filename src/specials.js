@@ -1,4 +1,4 @@
-exports.EXCEPTIONS = {
+exports.SPECIALS = {
   GR: "Government of Rwanda",
   GP: "Government Project",
   RDF: "Rwanda Defense Force",

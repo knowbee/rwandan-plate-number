@@ -1,6 +1,6 @@
 const {
-  EXCEPTIONS
-} = require("./exceptions")
+  SPECIALS
+} = require("./specials")
 const {
   specialPlate
 } = require("./format")
@@ -20,7 +20,7 @@ exports.isSpecial = (pn) => {
   if (plateNumber.length < 6 || plateNumber.length > 7) {
     return false
   }
-  if (!EXCEPTIONS[logo.toUpperCase()]) {
+  if (!SPECIALS[logo.toUpperCase()]) {
     return false
   }
   return /^(GP|RNP|GR|RDF)[0-9]{3}[A-Z]{1}$/i.test(plateNumber)

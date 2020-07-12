@@ -1,7 +1,9 @@
 const {
   isSpecial
 } = require("./isSpecial")
-
+const {
+  isMoto
+} = require("./isMoto")
 
 /**
  * Returns true if plate number is a Rwandan valid plate number
@@ -12,6 +14,9 @@ const {
  */
 exports.isValid = (plateNumber) => {
   if (isSpecial(plateNumber)) {
+    return true
+  }
+  if (isMoto(plateNumber)) {
     return true
   }
 }

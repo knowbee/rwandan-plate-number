@@ -16,6 +16,9 @@ const {
 const {
   isDiplomatic
 } = require("./isDiplomatic")
+const {
+  isNormal
+} = require("./isNormal")
 
 
 module.exports = {
@@ -23,5 +26,6 @@ module.exports = {
   isMoto,
   isForeign,
   isSpecial,
-  isDiplomatic
+  isDiplomatic,
+  isNormal
 }

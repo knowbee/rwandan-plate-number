@@ -35,3 +35,13 @@ exports.checkDiplomatic = (pn) => {
   const parts = pn.replace(/^[\s]*([0-9]{1})(CD|CMD)[\s]*([0-9]{2})[\s]*([A-Z]{1})[\s]*$/i, "$1,$2,$3,$4")
   return parts.split(",")
 }
+
+/**
+ * 
+ * @param {string} pn 
+ */
+
+exports.checkNormal = (pn) => {
+  const parts = pn.replace(/^[\s]*(R[A-Z]{2})[\s]*([0-9]{3})([A-Z]{1})[\s]*$/i, "$1,$2,$3")
+  return parts.split(",")
+}

@@ -2,8 +2,8 @@ const {
   SPECIALS
 } = require("./specials")
 const {
-  checkDiplomatic
-} = require("./format")
+  diplomaticPlate
+} = require("./helper")
 
 /**
  * 
@@ -14,7 +14,7 @@ const {
  */
 exports.isDiplomatic = (pn) => {
   const str = !pn ? "" : pn
-  const [prefix, logo, code, letter] = checkDiplomatic(str)
+  const [prefix, logo, code, letter] = diplomaticPlate(str)
   const plateNumber = `${prefix}${logo}${code}${letter}`
 
   if (plateNumber.length < 6 || plateNumber.length > 7) {

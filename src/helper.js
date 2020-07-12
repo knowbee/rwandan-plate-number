@@ -13,7 +13,7 @@ exports.specialPlate = (pn) => {
  * @param {string} pn 
  */
 
-exports.checkMoto = (pn) => {
+exports.motoPlate = (pn) => {
   const parts = pn.replace(/^[\s]*(R[A-Z])[\s]*([0-9]{3})[\s]*([A-Z]{1})[\s]*$/i, "$1,$2,$3")
   return parts.split(",")
 }
@@ -22,7 +22,7 @@ exports.checkMoto = (pn) => {
  * @param {string} pn 
  */
 
-exports.checkForeign = (pn) => {
+exports.foreignPlate = (pn) => {
   const parts = pn.replace(/^[\s]*(IT)[\s]*([0-9]{3})[\s]*([A-Z]{2})[\s]*$/i, "$1,$2,$3")
   return parts.split(",")
 }
@@ -31,7 +31,7 @@ exports.checkForeign = (pn) => {
  * @param {string} pn 
  */
 
-exports.checkDiplomatic = (pn) => {
+exports.diplomaticPlate = (pn) => {
   const parts = pn.replace(/^[\s]*([0-9]{1})(CD|CMD)[\s]*([0-9]{2})[\s]*([A-Z]{1})[\s]*$/i, "$1,$2,$3,$4")
   return parts.split(",")
 }
@@ -41,7 +41,7 @@ exports.checkDiplomatic = (pn) => {
  * @param {string} pn 
  */
 
-exports.checkNormal = (pn) => {
+exports.normalPlate = (pn) => {
   const parts = pn.replace(/^[\s]*(R[A-Z]{2})[\s]*([0-9]{3})[\s]*([A-Z]{1})[\s]*$/i, "$1,$2,$3")
   return parts.split(",")
 }

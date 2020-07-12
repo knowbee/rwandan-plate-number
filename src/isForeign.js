@@ -2,8 +2,8 @@ const {
   SPECIALS
 } = require("./specials")
 const {
-  checkForeign
-} = require("./format")
+  foreignPlate
+} = require("./helper")
 
 /**
  * 
@@ -14,7 +14,7 @@ const {
  */
 exports.isForeign = (pn) => {
   const str = !pn ? "" : pn
-  const [logo, code, letters] = checkForeign(str)
+  const [logo, code, letters] = foreignPlate(str)
   const plateNumber = `${logo}${code}${letters}`
   if (plateNumber.length !== 7) {
     return false

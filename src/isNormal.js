@@ -1,6 +1,6 @@
 const {
-  checkNormal
-} = require("./format")
+  normalPlate
+} = require("./helper")
 
 /**
  * 
@@ -11,7 +11,7 @@ const {
  */
 exports.isNormal = (pn) => {
   const str = !pn ? "" : pn
-  const [logo, code, letter] = checkNormal(str)
+  const [logo, code, letter] = normalPlate(str)
   const plateNumber = `${logo}${code}${letter}`
   if (plateNumber.length !== 7) {
     return false

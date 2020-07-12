@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/knowbee/rwandan-plate-validator.git"
+    "url": "git+https://github.com/knowbee/rwandan-plate-number.git"
   },
   "keywords": [
     "plates",
@@ -21,9 +21,9 @@
   "author": "Igwaneza Bruce <knowbeeinc@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/knowbee/rwandan-plate-validator/issues"
+    "url": "https://github.com/knowbee/rwandan-plate-number/issues"
   },
-  "homepage": "https://github.com/knowbee/rwandan-plate-validator#readme",
+  "homepage": "https://github.com/knowbee/rwandan-plate-number#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^7.4.0",

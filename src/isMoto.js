@@ -2,8 +2,8 @@ const {
   SPECIALS
 } = require("./specials")
 const {
-  checkMoto
-} = require("./format")
+  motoPlate
+} = require("./helper")
 
 /**
  * 
@@ -14,7 +14,7 @@ const {
  */
 exports.isMoto = (pn) => {
   const str = !pn ? "" : pn
-  const [logo, code, letter] = checkMoto(str)
+  const [logo, code, letter] = motoPlate(str)
   const plateNumber = `${logo}${code}${letter}`
   if (plateNumber.length !== 6) {
     return false

@@ -4,4 +4,6 @@ exports.SPECIALS = {
   RDF: "Rwanda Defense Force",
   RNP: "Rwanda National Police",
   IT: "International body",
+  CD: "Corps Diplomatique",
+  CMD: "Chef de Mission Diplomatique",
 };

@@ -28,4 +28,14 @@ describe("rwandan valid plate number", async () => {
       expect(isValid("9CMD05R")).to.equal(true);
     });
   });
+  describe("empty plate number", () => {
+    it("should return false with ''", function () {
+      expect(isValid("")).to.equal(false);
+    });
+  });
+  describe("normal plate number", () => {
+    it("should return true with RAA001A", function () {
+      expect(isValid("RAA001A")).to.equal(true);
+    });
+  });
 });

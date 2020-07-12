@@ -23,5 +23,5 @@ exports.isSpecial = (pn) => {
   if (!SPECIALS[logo.toUpperCase()]) {
     return false
   }
-  return /^(GP|RNP|GR|RDF)[0-9]{3}[A-Z]{1}$/i.test(plateNumber)
+  return /^(GP|RNP|GR|RDF)[\s]*[0-9]{3}[A-Z]{1}$/i.test(plateNumber)
 }

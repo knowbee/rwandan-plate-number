@@ -19,5 +19,8 @@ describe("rwandan valid plate number", async () => {
     it("should return true with RC300K", function () {
       expect(isValid("RC300K")).to.equal(true);
     });
+    it("should return true with RC 300K", function () {
+      expect(isValid("RC 300K")).to.equal(true);
+    });
   });
 });

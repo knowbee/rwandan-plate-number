@@ -23,5 +23,5 @@ exports.isForeign = (pn) => {
   if (!SPECIALS[logo.toUpperCase()]) {
     return false
   }
-  return /^[\s]*(IT)[0-9]{3}[A-Z]{2}$/i.test(plateNumber)
+  return /^[\s]*(IT)[\s]*[0-9]{3}[A-Z]{2}$/i.test(plateNumber)
 }

@@ -9,5 +9,8 @@ describe("rwandan foreign plate number", async () => {
     it("should return true with IT269RE", function () {
       expect(isForeign("IT269RE")).to.equal(true);
     });
+    it("should return true with IT 269RE", function () {
+      expect(isForeign("IT 269RE")).to.equal(true);
+    });
   });
 });

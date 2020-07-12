@@ -1,6 +1,6 @@
 {
   "name": "rwandan-plate-number",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Rwandan plate number validator",
   "main": "src/index.js",
   "scripts": {

@@ -1,6 +1,6 @@
 # Rwandan Plate Number
 
-    Validate a Rwandan car/motocycle plate number
+    Validate a Rwandan car/motorcycle plate number
 
 [![Build Status](https://travis-ci.com/knowbee/rwandan-plate-validator.svg?token=yN9jXnk59suszMqNsJJb&branch=master)](https://travis-ci.com/knowbee/rwandan-plate-validator)
 [![npm](https://img.shields.io/npm/dt/rwandan-plate-number.svg)](https://www.npmjs.com/package/rwandan-plate-number)

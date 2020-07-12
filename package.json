@@ -1,0 +1,34 @@
+{
+  "name": "rwandan-plate-number",
+  "version": "1.0.0",
+  "description": "Rwandan plate number validator",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint ./src",
+    "test": "mocha ./tests/* --exit",
+    "fix-lint": "eslint ./src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knowbee/rwandan-plate-validator.git"
+  },
+  "keywords": [
+    "plates",
+    "car plates",
+    "car",
+    "validator"
+  ],
+  "author": "Igwaneza Bruce <knowbeeinc@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knowbee/rwandan-plate-validator/issues"
+  },
+  "homepage": "https://github.com/knowbee/rwandan-plate-validator#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "mocha": "^8.0.1"
+  }
+}

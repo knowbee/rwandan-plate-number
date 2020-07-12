@@ -23,4 +23,9 @@ describe("rwandan valid plate number", async () => {
       expect(isValid("RC 300K")).to.equal(true);
     });
   });
+  describe("diplomatic plate number", () => {
+    it("should return true with 9CMD05R", function () {
+      expect(isValid("9CMD05R")).to.equal(true);
+    });
+  });
 });

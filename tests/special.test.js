@@ -12,6 +12,9 @@ describe("rwandan special plate number", async () => {
     it("should return true with GP 012K", function () {
       expect(isSpecial("GP 012K")).to.equal(true);
     });
+    it("should return true with RDF 896 K", function () {
+      expect(isSpecial("RDF 896 K")).to.equal(true);
+    });
   });
 
 });

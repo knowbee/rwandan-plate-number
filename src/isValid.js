@@ -9,6 +9,10 @@ const {
   isForeign
 } = require("./isForeign")
 
+const {
+  isDiplomatic
+} = require("./isDiplomatic")
+
 /**
  * Returns true if plate number is a Rwandan valid plate number
  * @param {string} plateNumber
@@ -24,6 +28,9 @@ exports.isValid = (plateNumber) => {
     return true
   }
   if (isForeign(plateNumber)) {
+    return true
+  }
+  if (isDiplomatic(plateNumber)) {
     return true
   }
 }

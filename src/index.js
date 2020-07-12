@@ -13,9 +13,15 @@ const {
   isForeign
 } = require("./isForeign")
 
+const {
+  isDiplomatic
+} = require("./isDiplomatic")
+
+
 module.exports = {
   isValid,
   isMoto,
   isForeign,
-  isSpecial
+  isSpecial,
+  isDiplomatic
 }

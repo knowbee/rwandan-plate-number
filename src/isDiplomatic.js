@@ -17,7 +17,7 @@ exports.isDiplomatic = (pn) => {
   const [prefix, logo, code, letter] = checkDiplomatic(str)
   const plateNumber = `${prefix}${logo}${code}${letter}`
 
-  if (plateNumber.trim().length < 6 || plateNumber.trim().length > 7) {
+  if (plateNumber.length < 6 || plateNumber.length > 7) {
     return false
   }
   if (!SPECIALS[logo.toUpperCase()]) {
